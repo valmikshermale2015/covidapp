@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+        <form name="valform" action="" method="POST">
+        
+        Credit Card Validation: <input type="text" id="cctextboxid" name="cctextbox"><br/>
+        Card Type: <select name="cardtype" id="cardtypeid">
+          <option value="visa">Visa</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="discover">Discover</option>
+          <option value="amex">Amex</option>
+          <option value="diners">Diners Club</option>
+        </select><br/>
+        <input type="button" name="submit" value="Verify Credit Card" onclick="isValidCreditCard(document.getElementById('cctextboxid').value,document.getElementById('cardtypeid').value)" />
+
+        <!-- <script>src="test.js" </script> -->
+        <script>
+         function isValidCreditCard(ccid,cctype) {
+    console.log("ccid",ccid);
+         console.log("cctype",cctype);
+}
+        </script>
+        
+</body>
+</html>
